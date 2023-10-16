@@ -1,0 +1,189 @@
+---
+import Polka from "@components/base/Polka.astro";
+import Card from "@components/base/Card.astro";
+---
+
+<div x-cloak class="relative overflow-hidden" x-intersect="activeStep = ''">
+  <div x-data="swiper()" class="carousel-container">
+    <div class="carousel-controls flex items-center justify-end mb-4">
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slidePrev()">
+        <i class="iconify" data-icon="lucide:arrow-left"></i>
+      </button>
+
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slideNext()">
+        <i class="iconify" data-icon="lucide:arrow-right"></i>
+      </button>
+    </div>
+    <div class="swiper-container" x-ref="container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <i
+                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
+                data-icon="fa6-solid:quote-left"></i>
+              <p class="text-muted-500 dark:text-muted-300">
+                Realmente creepscorp es una empresa que se preocupa por sus clientes, siempre están al pendiente de cualquier duda o problema que se presente, además de que siempre están innovando y mejorando sus servicios.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="https://media.cssninja.io/shuriken/avatars/3.svg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Juan Perez
+                  </h4>
+                  <p class="text-xs text-muted-400">Valparaiso, Chile</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <i
+                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
+                data-icon="fa6-solid:quote-left"></i>
+              <p class="text-muted-500 dark:text-muted-300">
+                La innovacion es lo que los caracteriza, siempre estan al pendiente de las nuevas tecnologias y las implementan en sus servicios.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="https://media.cssninja.io/shuriken/avatars/2.svg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Maya Rosselini
+                  </h4>
+                  <p class="text-xs text-muted-400">Rancagua, Chile</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <i
+                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
+                data-icon="fa6-solid:quote-left"></i>
+              <p class="text-muted-500 dark:text-muted-300">
+                Los proyectos realizados por creepscorp son de alta calidad, siempre cumplen con los requerimientos y los tiempos de entrega.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="https://media.cssninja.io/shuriken/avatars/10.svg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Anna Galagher
+                  </h4>
+                  <p class="text-xs text-muted-400">Viña del mar, Chile</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <i
+                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
+                data-icon="fa6-solid:quote-left"></i>
+              <p class="text-muted-500 dark:text-muted-300">
+                La calidad de los servicios que ofrecen es muy buena, siempre estan al pendiente de cualquier problema que se presente.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="https://media.cssninja.io/shuriken/avatars/9.svg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Marlen Olivari
+                  </h4>
+                  <p class="text-xs text-muted-400">Santiago, Chile</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <i
+                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
+                data-icon="fa6-solid:quote-left"></i>
+              <p class="text-muted-500 dark:text-muted-300">
+                Mi software fue desarrollado por creepscorp, la calidad del producto es muy buena, funciona tal y como lo esperaba.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="https://media.cssninja.io/shuriken/avatars/11.svg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Francisco Morales
+                  </h4>
+                  <p class="text-xs text-muted-400">Antofagasta, Chile</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <i
+                class="iconify w-8 h-8 text-primary-600 dark:text-rose-500"
+                data-icon="fa6-solid:quote-left"></i>
+              <p class="text-muted-500 dark:text-muted-300">
+                CreepsCorp es una empresa seria y que se dedica a innovar en el país, siempre estan al pendiente de cualquier problema que se presente.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="https://media.cssninja.io/shuriken/avatars/16.svg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Maria Jose
+                  </h4>
+                  <p class="text-xs text-muted-400">San Antonio, Chile</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

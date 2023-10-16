@@ -1,0 +1,172 @@
+---
+import Layout from "@layouts/Default.astro";
+import ButtonMain from "@components/base/ButtonMain.astro";
+import HeroMain from "@components/hero/HeroMain.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import IconBlock from "@components/content/IconBlock.astro";
+import Toolbar from "@components/content/doctors/grid/Toolbar.astro";
+import Filters from "@components/content/doctors/grid/Filters.astro";
+import Grid from "@components/content/doctors/grid/Grid.astro";
+import SideStatsRight from "@components/content/features/SideStatsRight.astro";
+import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
+import Pricing from "@components/content/Pricing.astro";
+import Cta from "@components/content/Cta.astro";
+import Testimonials from "@components/content/Testimonials.astro";
+---
+
+<Layout title="Home">
+  <HeroMain />
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title="Descubre Nuestros Servicios Digitales"
+        subtitle="Explora Nuestra Gama Servicios Donde la Innovación Se Convierte en Realidad"
+        minititle="Software On-Demand"
+      />
+
+      <div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Consultoría Tecnológica"
+            text="Asesoramiento experto en tecnología y estrategia digital, ayudando a las empresas a tomar decisiones informadas y a implementar soluciones tecnológicas eficaces."
+            icon="ph:address-book-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Equipo Profesional"
+            text="Con nuestro equipo altamente capacitado y servicios digitales de vanguardia, transformamos tus ideas en soluciones digitales de éxito en tiempo récord."
+            icon="ph:microsoft-teams-logo-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Automatización de Procesos"
+            text="Desarrollo de soluciones automatizadas para agilizar tareas repetitivas y mejorar la eficiencia operativa."
+            icon="ph:projector-screen-chart-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Integración de Sistemas"
+            text="Conexión de sistemas y aplicaciones existentes para mejorar la eficiencia y la comunicación dentro de una organización."
+            icon="ph:intersect-three-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Desarrollo de Software a Medida"
+            text="Creación de software personalizado para satisfacer las necesidades únicas de una empresa, desde sistemas de gestión interna hasta herramientas de productividad."
+            icon="ph:circuitry-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Desarrollo de Aplicaciones Móviles"
+            text="Creación de aplicaciones para dispositivos móviles, ya sea en Android o iOS, que brindan experiencias de usuario únicas y funcionales."
+            icon="ph:android-logo-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Desarrollo Web"
+            text="Construcción de sitios web a medida, desde sitios corporativos hasta aplicaciones web complejas, que satisfacen las necesidades específicas de cada cliente."
+            icon="ph:angular-logo-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Seguridad Cibernética"
+            text="Protección contra amenazas digitales y auditorías de seguridad para garantizar la integridad y la confidencialidad de los datos de la empresa."
+            icon="ph:globe-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
+    <Container>
+      <SectionTitle
+        title="Nuestros Expertos en Software"
+        subtitle="Impulsamos la innovación y creamos soluciones digitales de vanguardia. Tu visión es nuestra misión."
+        minititle="Desarrolladores de Software"
+        class="'mx-auto text-center'"
+      />
+
+      <div id="doctors" x-data="doctors()" x-intersect="activeStep = 'spy-1'">
+        <!-- Grid wrapper -->
+        <div class="py-10">
+            <div class="grid grid-cols-12 md:grid-cols-4 gap-6 pb-20">
+                <!-- Content -->
+                <div class="col-span-12 md:col-span-8 lg:col-span-9">
+                    <!-- Subgrid -->
+                    <Grid />
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-10">
+                <ButtonMain to="#" class="'w-64 !h-14 max-w-full'">Contactanos</ButtonMain>
+            </div>
+        </div>
+    </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted class="'overflow-hidden'">
+    <Container>
+      <div class="py-10">
+        <SideStatsRight />
+        <SideStatsLeft />
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title="Opciones de Precios"
+        subtitle="Nuestros planes de precios se adaptan a las necesidades de tu empresa. ¡Elige el plan que mejor se adapte a ti!"
+        minititle="Precios y Planes"
+        class="'mx-auto text-center'"
+      />
+      <Pricing />
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title="Ellos aman CreepsCorp"
+        subtitle="Unete a la familia de CreepsCorp y disfruta de los beneficios de la innovación."
+        minititle="Nuestros clientes"
+        class="'mx-auto text-center'"
+      />
+      <Testimonials />
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <Cta />
+    </Container>
+  </SectionMuted>
+</Layout>

@@ -1,0 +1,491 @@
+---
+import Card from "@components/base/Card.astro";
+---
+
+<div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
+  <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Erik.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Erik Becerra Abarca
+        </h4>
+        <p class="text-sm text-muted-400">Database Specialist</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Especialista que administra y optimiza bases de datos, 
+          asegurando accesibilidad para el software.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover: hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Axel.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Axel Neumann Gonzalez
+        </h4>
+        <p class="text-sm text-muted-400">UI Designer</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Maestro del arte de la interfaz, transformando ideas en interfaces atractivas y funcionales.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'neurology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Luis.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Luis González Riquelme
+        </h4>
+        <p class="text-sm text-muted-400">Software Architect</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Visionario detrás de la estructura de sistemas de software, 
+          garantizando robustes y eficiencia.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Ignacio.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Ignacio Morales Silva
+        </h4>
+        <p class="text-sm text-muted-400">Quality Assurance</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Profesional integral que garantiza que los productos y servicios se desarrollen
+          con la más alta calidad posible. 
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Francisco.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Francisco Leiva Camus
+        </h4>
+        <p class="text-sm text-muted-400">Project Manager</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Líder estratégico que impulsa el éxito en los proyectos, 
+          asegurando entregas a tiempo y dentro del presupuesto.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'surgery'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Sebastian.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Sebastian Valdebenito Farias
+        </h4>
+        <p class="text-sm text-muted-400">Business Analyst</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Traductor de tus necesidades empresariales en requisitos técnicos, asegurando tu visión de negocio.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Matias.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Matias Morales Mendez
+        </h4>
+        <p class="text-sm text-muted-400">Configuration Manager</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Controlador de versiones y configuraciones del software, garantizando consistencia.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Mauricio.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Mauricio Diaz Espinoza
+        </h4>
+        <p class="text-sm text-muted-400">Front-end Developer</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Apasionado por la creación de interfaces digitales atractivas y funcionales.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Darien.png"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Darien Pacheco Cantillana
+        </h4>
+        <p class="text-sm text-muted-400">Security Specialist</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Protector del software de amenazas cibernéticas que garantiza la integridad y confidencialidad de los datos.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'general'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="/img/team/Angel.png"
+          alt="Angel Morales"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Angel Morales Morgado
+        </h4>
+        <p class="text-sm text-muted-400">Back-end Developer</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Ingeniero detrás de la cortina digital, 
+          que da vida a las funcionalidades que hacen utiles a las aplicaciones.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <div class="flex items-center gap-2">
+          <button
+            tooltip="Agendar cita"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:calendar-check-duotone"
+            ></i>
+          </button>
+          <button
+            tooltip="Enviar mensaje"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:chat-circle-duotone"></i>
+          </button>
+          <button
+            tooltip="Ver perfil"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <i class="iconify w-4 h-4" data-icon="ph:user-duotone"></i>
+          </button>
+        </div>
+      </div>
+    </Card>
+  </div>
+
+</div>
